@@ -1,0 +1,19 @@
+{
+    "services": {
+        "userServiceAPI": {
+            "index": 0,
+            "instances": [
+                {
+                    "apiName": "userServiceAPI",
+                    "protocol": "http",
+                    "host": "http://localhost:5000",
+                    "url": "http://localhost:5000/api/v1/users/",
+                    "api_key":"edc5bde2-de0c-47cd-a938-747524fac948",
+                    "api_secret":"bluespace_app.b0cde58b-6c09-5467-8554-a8b65d309022",
+                    "enabled": true
+                }
+            ],
+            "loadBalanceStrategy": "ROUND_ROBIN"
+        }
+    }
+}
