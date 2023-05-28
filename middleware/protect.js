@@ -4,7 +4,6 @@ const bcrypt = require("bcrypt");
 const asynHandler = require("./async");
 const { sendResponse, CatchHistory } = require("../helper/utilfunc");
 const { DetectDevice, DetectIp, MainDec } = require("../helper/devicefuncs");
-const errors = require("bluebird/js/release/errors");
 dotenv.config({ path: "./config/config.env" });
 const systemDate = new Date().toISOString().slice(0, 19).replace("T", " ");
 exports.appauth = asynHandler(async (req, res, next) => {
